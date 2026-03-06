@@ -1,3 +1,9 @@
 cvimg.py
 checksum_maker/*
 *.bin
+
+scripts/*
+mod/etc/*
+
+notes.txt
+squashfs-tool.sh
