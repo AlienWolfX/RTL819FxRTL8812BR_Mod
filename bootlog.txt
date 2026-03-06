@@ -1,0 +1,424 @@
+Booting...
+init_ram
+W init ddr ok
+
+DRAM Type: DDR2
+        DRAM frequency: 400MHz
+        DRAM Size: 64MB
+JEDEC id 207018, EXT id 0x2070
+found xm25qh128a
+flash vendor: Micron
+xm25qh128a, size=16MB, erasesize=4KB, max_speed_hz=75000000Hz
+auto_mode=0 addr_width=3 erase_opcode=0x00000020
+=>CPU Wake-up interrupt happen! GISR=89000004
+
+---Realtek RTL8197F boot code at 2018.03.20-14:37+0800 v3.4T-pre2.1 (999MHz)
+bootbank is 1, bankmark 80000001
+Jump to image start=0x80a00000...
+return_addr = b0030000 ,boot bank=1, bank_mark=0x80000001...
+decompressing kernel:
+Uncompressing Linux... done, booting the kernel.
+done decompressing kernel.
+start address: 0x80574d90
+Linux version 3.10.90 (clz@ubuntu) (gcc version 4.4.7 (Realtek MSDK-4.4.7 Build 2001) ) #4 Mon Apr 2 10:18:07 CST 2018
+bootconsole [early0] enabled
+CPU revision is: 00019385 (MIPS 24Kc)
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+Zone ranges:
+  Normal   [mem 0x00000000-0x03ffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x00000000-0x03ffffff]
+Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 4088
+Kernel command line: console=ttyS0,38400 root=/dev/mtdblock1
+PID hash table entries: 256 (order: -4, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 1, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 0, 16384 bytes)
+Writing ErrCtl register=0007798a
+Readback ErrCtl register=0007798a
+Memory: 42128k/65536k available (5610k kernel code, 23408k reserved, 2546k data, 224k init, 0k highmem)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:192
+Realtek GPIO IRQ init
+Calibrating delay loop... 666.41 BogoMIPS (lpj=3332096)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048
+devtmpfs: initialized
+NET: Registered protocol family 16
+<<<<<Register PCI Controller>>>>>
+Do MDIO_RESET
+40MHz
+Find PCIE Port, Device:Vender ID=b82210ec
+INFO: initializing USB devices ...
+enable port 0 two port enable
+port 0 org 0xe0=e2
+port 0 org 0xe1=31
+port 0 org 0xe2=39
+port 0 org 0xe4=98
+port 0 org 0xe6=c0
+port 1 org 0xe0=e2
+port 1 org 0xe1=31
+port 1 org 0xe2=39
+port 1 org 0xe4=98
+port 1 org 0xe6=c0
+patch new usb phy para for 40M OSC
+system  reg b8000010=0x80047000
+system  reg b8000014=0x118
+system  reg b8000160=0x1
+system  reg b8000164=0x0
+system  reg b8000168=0x0
+system  reg b800016c=0x280500
+system  reg b8000180=0x60000
+system  reg b8021094=0x200020
+system  reg b8140200=0xf002cc11
+system  reg b8140204=0x0
+system  reg b8140208=0x2010000
+system  reg b814020c=0x9b00
+system  reg b8140210=0xca00ca
+
+
+EHCI  reg b8021050=0x0
+EHCI  reg b8021054=0x2000
+EHCI  reg b8021058=0x2000
+OHCI  reg b8020000=0x110
+OHCI  reg b8020004=0x0
+port 0 reg e0=e2
+port 0 reg e1=31
+port 0 reg e2=33
+port 0 reg e3=8d
+port 0 reg e4=c9
+port 0 reg e5=19
+port 0 reg e6=c1
+port 0 reg e7=91
+port 0 reg f0=fc
+port 0 reg f1=8c
+port 0 reg f2=0
+port 0 reg f3=11
+port 0 reg f4=9b
+port 0 reg f5=4
+port 0 reg f6=0
+port 1 reg e0=e2
+port 1 reg e1=31
+port 1 reg e2=33
+port 1 reg e3=8d
+port 1 reg e4=c9
+port 1 reg e5=19
+port 1 reg e6=c1
+port 1 reg e7=91
+port 1 reg f0=fc
+port 1 reg f1=8c
+port 1 reg f2=0
+port 1 reg f3=11
+port 1 reg f4=9b
+port 1 reg f5=4
+port 1 reg f6=0
+Realtek GPIO controller driver init
+INFO: registering sheipa spi device
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+INFO: sheipa spi driver register
+INFO: sheipa spi probe
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Switching to clocksource MIPS
+NET: Registered protocol family 2
+TCP established hash table entries: 2048 (order: 0, 16384 bytes)
+TCP bind hash table entries: 2048 (order: -1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+TCP: reno registered
+UDP hash table entries: 1024 (order: 0, 16384 bytes)
+UDP-Lite hash table entries: 1024 (order: 0, 16384 bytes)
+NET: Registered protocol family 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+exFAT: Version 1.2.9
+NTFS driver 2.1.30 [Flags: R/W].
+fuse init (API version 7.22)
+msgmni has been set to 82
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+io scheduler noop registered (default)
+Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+console [ttyS0] enabled, bootconsole disabled7) is a 16550A
+console [ttyS0] enabled, bootconsole disabled
+Realtek GPIO Driver for Flash Reload Default
+loop: module loaded
+m25p80 spi0.0: change speed to 15000000Hz, div 7
+JEDEC id 207018
+m25p80 spi0.0: found xm25qh128a, expected m25p80
+flash vendor: Micron
+m25p80 spi0.0: xm25qh128a (16384 Kbytes) (75000000 Hz)
+4 rtkxxpart partitions found on MTD device m25p80
+Creating 4 MTD partitions on "m25p80":
+0x000000000000-0x000000300000 : "boot+cfg+linux"
+0x000000300000-0x000000800000 : "rootfs"
+0x000000800000-0x000000b00000 : "boot+cfg+linux2"
+0x000000b00000-0x000001000000 : "rootfs2"
+PPP generic driver version 2.4.2
+PPP BSD Compression module registered
+PPP Deflate Compression module registered
+NET: Registered protocol family 24
+MPPE/MPPC encryption/compression module registered
+Realtek WLAN driver - version 1.7 (2015-10-30)(SVN:3602)
+DFS function - version 2.0.14
+Adaptivity function - version 9.3.4
+Do MDIO_RESET
+40MHz
+Find PCIE Port, Device:Vender ID=b82210ec
+
+ found 8822B !!!
+halmac_check_platform_api ==========>
+12089M
+HALMAC_MAJOR_VER = 0
+HALMAC_PROTOTYPE_VER = 0
+HALMAC_MINOR_VER = 0
+halmac_init_adapter_88xx ==========>
+halmac_init_adapter Succss
+IS_RTL8822B_SERIES value8 = a
+MACHAL_version_init
+
+
+#######################################################
+SKB_BUF_SIZE=4432 MAX_SKB_NUM=1024
+#######################################################
+
+MACHAL_version_init
+RFE TYPE =0
+
+
+#######################################################
+SKB_BUF_SIZE=3032 MAX_SKB_NUM=400
+#######################################################
+
+RFE TYPE =0
+RFE TYPE =0
+RFE TYPE =0
+RFE TYPE =0
+RFE TYPE =0
+usbcore: registered new interface driver asix
+usbcore: registered new interface driver ax88179_178a
+usbcore: registered new interface driver cdc_ether
+usbcore: registered new interface driver net1080
+usbcore: registered new interface driver cdc_subset
+usbcore: registered new interface driver zaurus
+usbcore: registered new interface driver cdc_ncm
+GobiNet: Quectel_Linux_GobiNet_SR01A02V16
+usbcore: registered new interface driver GobiNet
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+rtl819x-ehci rtl819x-ehci: Realtek rtl819x On-Chip EHCI Host Controller
+rtl819x-ehci rtl819x-ehci: new USB bus registered, assigned bus number 1
+rtl819x-ehci rtl819x-ehci: irq 21, io mem 0x18021000
+rtl819x-ehci rtl819x-ehci: USB 2.0 started, EHCI 1.00
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: Realtek rtl819x On-Chip EHCI Host Controller
+usb usb1: Manufacturer: Linux 3.10.90 ehci_hcd
+usb usb1: SerialNumber: rtl819x-ehci
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+ehci-platform: EHCI generic platform driver
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+rtl819x-ohci rtl819x-ohci: Realtek rtl819x built-in OHCI controller
+rtl819x-ohci rtl819x-ohci: new USB bus registered, assigned bus number 2
+rtl819x-ohci rtl819x-ohci: irq 21, io mem 0x18020000
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: Realtek rtl819x built-in OHCI controller
+usb usb2: Manufacturer: Linux 3.10.90 ohci_hcd
+usb usb2: SerialNumber: rtl819x-ohci
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+uhci_hcd: USB Universal Host Controller Interface driver
+usbcore: registered new interface driver cdc_wdm
+usbcore: registered new interface driver usb-storage
+usbcore: registered new interface driver usbserial
+usbcore: registered new interface driver usbserial_generic
+usbserial: USB Serial support registered for generic
+usbcore: registered new interface driver option
+usbserial: USB Serial support registered for GSM modem (1-port)
+Otg act as Host mode
+=>do UTMI reset, r=1
+=>do UTMI reset, r=0
+RTL8197F u2 phy 40MHz patch
+reg e0=e2
+reg e1=31
+reg e2=33
+reg e3=8d
+reg e4=c9
+reg e5=19
+reg e6=c1
+reg e7=91
+reg f0=fc
+reg f1=8c
+reg f2=0
+reg f3=11
+reg f4=9b
+reg e0=25
+reg e1=4f
+reg e2=0
+reg e3=0
+reg e4=0
+reg e5=a
+reg e6=0
+reg e7=0
+reg f0=fc
+reg f1=8c
+reg f2=0
+reg f3=11
+reg f4=bb
+=>do UTMI reset, r=1
+=>do UTMI reset, r=0
+create lmdev=8340ae00
+device_register :register pass
+dwc_otg: version 3.10b 20-MAY-2013
+dwc_otg_driver_probe(8340ae00)
+start=0xb8030000
+base=0xb8030000
+dwc_otg_device=0x8350b500
+Core Release: 3.10a
+Setting default values for core params
+=> SNPSID=4f54310a
+Using Buffer DMA mode
+Periodic Transfer Interrupt Enhancement - disabled
+Multiprocessor Interrupt Enhancement - disabled
+OTG VER PARAM: 0, OTG VER FLAG: 0
+Shared Tx FIFO mode
+dwc_otg logicmodule: DWC OTG Controller
+dwc_otg logicmodule: new USB bus registered, assigned bus number 3
+dwc_otg logicmodule: irq 20, io mem 0xb8030000
+Init: Power Port (0)
+usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb3: Product: DWC OTG Controller
+usb usb3: Manufacturer: Linux 3.10.90 dwc_otg_hcd
+usb usb3: SerialNumber: logicmodule
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 1 port detected
+u32 classifier
+nf_conntrack version 0.5.0 (658 buckets, 2632 max)
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP: cubic registered
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+sit: IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+Ebtables v2.0 registered
+l2tp_core: L2TP core driver, V2.0
+l2tp_ip: L2TP IP encapsulation support (L2TPv3)
+l2tp_netlink: L2TP netlink interface
+l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
+8021q: 802.1Q VLAN Support v1.8
+Realtek FastPath:v1.03
+
+Probing RTL819X NIC-kenel stack size order[0]...
+eth0 added. vid=9 Member port 0x1...
+eth1 added. vid=8 Member port 0x10...
+eth2 added. vid=9 Member port 0x2...
+eth3 added. vid=9 Member port 0x4...
+eth4 added. vid=9 Member port 0x8...
+[peth0] added, mapping to [eth1]...
+m25p80 spi0.0: change speed to 75000000Hz, div 2
+VFS: Mounted root (squashfs filesystem) readonly on device 31:1.
+devtmpfs: mounted
+Freeing unused kernel memory: 224K (807f8000 - 80830000)
+init started: BusyBox v1.13.4 (2018-03-19 17:39:42 CST)
+cp: cannot stat '/etc/avahi-daemon.conf': No such file or directory
+type:3, enable:1, percent1
+******************
+sysconf init gw all
+***************
+Init Start...
+******************
+sysconf wlanapp kill wlan0
+***************
+******************
+sysconf wlanapp kill wlan1
+***************
+open /proc/br_wlanblock: Permission denied
+Init bridge interface...
+device eth0 entered promiscuous mode
+device eth2 entered promiscuous mode
+device eth3 entered promiscuous mode
+device eth4 entered promiscuous mode
+device wlan0 entered promiscuous mode
+WlanSupportAbility = 0x3
+[hard_code_8822_mibs] +++
+MAX_RX_BUF_LEN = 4000
+[ODM_software_init]
+clock 40MHz
+InitPON OK!!!
+load efuse ok
+rom_progress: 0x200006f
+rom_progress: 0x400006f
+InitMAC Page0
+Init Download FW OK
+halmac_init_mac_cfg OK
+halmac_cfg_rx_aggregation OK
+halmac_init_mac_cfg OK
+[GetHwReg88XX][size PHY_REG_PG_8822Bmp_Type7]
+[GetHwReg88XX][PHY_REG_PG_8822Bmp_Type7]
+RL6302_MAC_PHY_Parameter_v018_20140708
+[set_8822_trx_regs] +++
+efuse content 0x3D7 = 0xf5
+efuse content 0x3D8 = 0xf2
+device wlan1 entered promiscuous mode
+WlanSupportAbility = 0x3
+[ODM_software_init]
+[97F] Bonding Type 97FN, PKG2
+[97F] RFE type 0 PHY paratemters: DEFAULT
+clock 40MHz
+load efuse ok
+rom_progress: 0x200006f
+rom_progress: 0x400006f
+[GetHwReg88XX][PHY_REG_PG_8197Fmp_Type0] size
+[GetHwReg88XX][PHY_REG_PG_8197Fmp_Type0]
+[GetHwReg88XX][rtl8197Ffw]
+[GetHwReg88XX][rtl8197Ffw size]
+[97F] Default BB Swing=30
+br0: port 6(wlan1) entered forwarding state
+br0: port 6(wlan1) entered forwarding state
+br0: port 5(wlan0) entered forwarding state
+br0: port 5(wlan0) entered forwarding state
+br0: port 4(eth4) entered forwarding state
+br0: port 4(eth4) entered forwarding state
+br0: port 3(eth3) entered forwarding state
+br0: port 3(eth3) entered forwarding state
+br0: port 2(eth2) entered forwarding state
+br0: port 2(eth2) entered forwarding state
+br0: port 1(eth0) entered forwarding state
+br0: port 1(eth0) entered forwarding state
+Init Wlan application...
+
+WiFi Simple Config v2.20-wps2.0 (2017.10.20-07:08+0000).
+
+Register to wlan0
+Register to wlan1
+iwcontrol RegisterPID to (wlan0)
+iwcontrol RegisterPID to (wlan1)
+route: SIOCDELRT: No such process
+IEEE 802.11f (IAPP) using interface br0 (v1.8)
++++set_wanipv6+++1978
+Start setting IPv6[IPv6]
+open /proc/sys/net/ipv4/rt_cache_rebuild_count: No such file or directory
+rand min=13,sec=15!
+/bin/sh: addgroup: not found
+passwd: unknown user tmptest
+/bin/sh: addgroup: not found
+Changing password for admin
+New password:
+Bad password: too short
+Retype password:
+passwd: password for admin is unchanged
+killall: telnetd: no process killed
+-----update_users_traffic, 667, 192, 168, 0, 254
+/etc/init.d/rcS: line 123: can't create /proc/irq/33/smp_affinity: nonexistent directory
+enable 0 interval
+/etc/init.d/rcS: line 134: dongle-mngr: not found
+boa: server version Boa/0.94.14rc21
+boa: server built Apr  2 2018 at 10:14:19.
+boa: starting server pid=15type:3, enable:0, percent0
+58, port 80
+Startup Ok
+#
